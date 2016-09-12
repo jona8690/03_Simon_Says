@@ -38,6 +38,11 @@ namespace SimonSaysInterface {
 					int Repeat = Int32.Parse(cmd[2]);
 					Console.WriteLine(simon.Repeat(cmd[1], Repeat));
 					break;
+
+				case "startof":
+					int Length = Int32.Parse(cmd[2]);
+					Console.WriteLine(simon.StartOfWord(cmd[1], Length));
+					break;
 			}
 
 			EndProgram();
@@ -50,6 +55,7 @@ namespace SimonSaysInterface {
 			Commands.Add("echo <input> - Repat what you enter");
 			Commands.Add("shout <input> - Shout what you enter");
 			Commands.Add("repeat <input> <times> - Repat what you enter");
+			Commands.Add("startof <input> <length>");
 
 			foreach (string write in Commands) {
 				Console.WriteLine(write);
