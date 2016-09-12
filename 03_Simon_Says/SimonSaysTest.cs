@@ -57,12 +57,6 @@ namespace _03_Simon_Says
         }
 
         [TestMethod]
-        public void ShouldRepeatANumberOfTimes2()
-        {
-            Simon simon = new Simon();
-            Assert.AreEqual("hello hello hello", simon.Repeat("hello", 3));
-        }
-        [TestMethod]
         public void ReturnsFirstLetterOfWord()
         {
             Simon simon = new Simon();
