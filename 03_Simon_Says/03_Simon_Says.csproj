@@ -50,6 +50,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Simon.cs" />
     <Compile Include="SimonSaysTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
